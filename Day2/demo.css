@@ -1,0 +1,39 @@
+.main-heading{
+  color: red;
+  background-color: rgb(14, 153, 153);
+  text-align: center;
+ padding: 20px;
+ border: 10px dashed black;
+ border-radius: 20px;
+  
+}
+.button-style{
+  text-align: center;
+  background-color: green;
+  color: rgb(179, 66, 66);
+}
+.button-1{
+  margin-top: 20px;
+  padding: 8px;
+  border: 10px dotted red;
+}
+.bg-image{
+  background-image: url("https://images.livspace-cdn.com/w:3840/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/ond-1634120396-Obfdc/1-2025-1736068988-NDPD1/jas-1751884202-slYBH/ki-1753694641-NGuLa/ki-42-1758276750-W2T8p.jpg");
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  opacity: 0.1;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  padding-top: 30px;
+  font-size: 30px;
+}
+.mobname-style{
+  background-color: aqua;
+  margin-left: 30%;
+  margin-right: 30%;
+  border-radius: 20px;
+}
+.phone-name{
+  color: red;
+}

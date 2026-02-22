@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    .box{
+      margin-left: 40%;
+      margin-top: 20%;
+      height: 100px;
+      width: 100px;
+      border-radius: 50%;
+      background-color: aqua;
+      animation: changestyle 1s ease-in-out 0.5s infinite alternate ;
+      transition: 1s ease-in-out 0.5s;
+    }
+    .box-1{
+      margin-left: 40%;
+      margin-top: 3%;
+      height: 100px;
+      width: 100px;
+      
+    }
+    @keyframes changestyle {
+      from{
+        transform:  translateY(0%);
+      }
+      to{
+        transform:  translateY(50%);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+
+  </div>
+  <button class="box-1">submit</button>
+</body>
+</html>

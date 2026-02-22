@@ -1,0 +1,57 @@
+/* slector{
+  property:value
+} 
+
+
+class----.
+id--#
+element ---nothing  */
+.mainheading{
+  background-color: rgb(28, 115, 165);
+  color: brown;
+  text-align: end;
+
+}
+.button-style{
+  background-color: blue;
+  color: white;
+
+padding-top: 100px;
+padding-bottom: 100px;
+padding-right: 100px;
+padding-left: 100px;
+border-top-left-radius: 150px;
+border-bottom-right-radius: 150px;
+border-bottom-left-radius: 5px;
+
+}
+.loginstyle{
+  margin-top: 200px;
+  margin-left: 500px;
+}
+
+.signin{
+  border-radius: 20px;
+  padding: 10px;
+  margin: 30px;
+}
+
+.main-box{
+  background-color: red;
+  text-align: center;
+  padding: 20px;
+  margin: 50px;
+  border-radius: 100px;
+  border: 20px dashed black;
+
+  /* border: width style color  */
+}
+.heading{
+  color: white;
+}
+
+.heading{
+  color: red;
+  background-color: blue;
+  text-align: center;
+}

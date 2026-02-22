@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+</head>
+<body>
+    <div style="display: flex; flex-direction: row; justify-content: center;">
+         <div>
+      <h1>Counter Project</h1>
+    <h1 id="countid" style="font-size: 100px; text-align: center;">0</h1>
+    <div >
+      <button  onclick="increment()" style="padding: 10px; border-radius: 10px; background-color: green; border: None; margin: 5px;">increment</button>
+      <button   onclick="Reset()" style="padding: 10px; border-radius: 10px; background-color: rgb(62, 70, 62); border: None; margin: 5px;">Reset</button>
+      <button  onclick="decrement()"  style="padding: 10px; border-radius: 10px; background-color: rgb(255, 0, 0); border: None; margin: 5px;">Decrement</button>
+
+
+    </div>
+    </div>
+    </div>
+
+
+
+    <script>
+      let h1tag = document.getElementById("countid");
+      console.log(h1tag)
+
+      // let button = document.getElementById("xyz");
+      // button.onclick=function(){
+      //     alert("button clicked")
+      // }  
+
+      let count =0;
+      function increment() {
+        count=count+1;
+        h1tag.textContent=count;
+        
+      }
+
+     function decrement() {
+      count=count-1
+      h1tag.textContent=count
+     }
+
+     function Reset() {
+      count=0
+      h1tag.textContent=count;
+     }
+
+
+    
+
+     //inline , onevents 
+    </script>
+</body>
+</html>

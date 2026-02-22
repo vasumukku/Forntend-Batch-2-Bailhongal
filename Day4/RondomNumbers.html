@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+<body>
+  
+  <div>
+    <input type="number" name="" id="inputid"   >
+    <button  onclick="check()">Check </button>
+
+    <h1 id="statustid">Status is : </h1>
+  </div>
+
+  <script>
+    let inputelement = document.getElementById("inputid") 
+    let h1tag = document.getElementById("statustid")
+
+    let number = parseInt(Math.random()*100 )
+    console.log(number) 
+    
+   
+
+    function check() {
+
+      if (inputelement.value==""){
+        alert("please any number");
+      }else{
+             console.log(inputelement.value);
+             if(number==inputelement.value){
+              console.log("you are the winnner")
+              h1tag.textContent="Staus is : you are the winner"
+            }else{
+            console.log("system is the winner") 
+            h1tag.textContent="Staus is : system is  the winner"
+
+            }
+
+      }
+    }
+ 
+  
+   
+  </script>
+</body>
+</html>
