@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+</head>
+<body>
+
+<div  style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh;">
+  <h1 id="statusmsg">Door is open</h1>
+  <div  style="display: flex;">
+  <button onmouseenter="openthedoor()">Push</button>
+  <button onmouseleave=" closethedorr()">pull</button>
+  </div>
+</div>
+
+  
+  <script>
+let h1tag = document.getElementById("statusmsg")
+
+function openthedoor() {
+  // alert("open is clicked")
+  h1tag.textContent="Open the door💩💩"
+  h1tag.style.color="red";
+}
+
+
+function closethedorr() {
+  h1tag.textContent="Door is closing 🤖🤖"
+  h1tag.style.color="green";
+}
+  </script>
+</body>
+</html>

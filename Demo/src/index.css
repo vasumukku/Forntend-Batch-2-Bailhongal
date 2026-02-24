@@ -1,0 +1,12 @@
+.animataionstyle{
+  animation: circlestyle 0.11s ease infinite;
+}
+
+@keyframes circlestyle {
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
