@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+
+  <style>
+    .redcar{
+      animation: redcarddesign 5s ease-in-out  infinite alternate ;
+    }
+
+
+    @keyframes redcarddesign {
+      0%{
+        transform: translate(0%);
+      }
+   
+      100%{
+        transform: translate(300% ,0%);
+      }
+    }
+
+/* down */
+
+
+   .downcar{
+      animation: downcarddesign 5s ease-in-out  infinite alternate ;
+    }
+
+
+    @keyframes downcarddesign {
+      0%{
+        transform: translate(0%);
+      }
+   
+      100%{
+        transform: translate(300% ,70%);
+      }
+    }
+
+
+
+    /* //jump */
+
+.jumpcar{
+      animation: jumpcarddesign 5s ease-in-out  infinite alternate ;
+    }
+
+
+    @keyframes jumpcarddesign{
+      0%{
+        transform: translate(0%);
+      }
+   
+      100%{
+        transform: translate(300% ,-70%);
+      }
+    }
+
+    
+
+
+
+  </style>
+</head>
+<body>
+  <img id="carid" src="https://png.pngtree.com/element_our/png/20181223/super-red-sports-car-png_293223.jpg" alt=""  style="height: 50vh; width: 30vw;"  class="redcar">
+
+  <div>
+    <button onclick="Jump()" >Jump</button>
+    <button  onclick="normal()">Normal</button>
+    <button onclick="Down()">Down</button>
+  </div>
+
+
+  <script>
+    let carimgelement= document.getElementById("carid");
+    function Jump() {
+    
+      carimgelement.classList.remove("redcar")
+      carimgelement.classList.remove("downcar")
+      carimgelement.classList.add("jumpcar")
+    }
+
+
+
+    function normal () {
+         carimgelement.classList.add("redcar")
+      carimgelement.classList.remove("downcar")
+      carimgelement.classList.remove("jumpcar")
+    }
+
+
+    function Down() {
+          carimgelement.classList.remove("redcar")
+      carimgelement.classList.add("downcar") 
+      carimgelement.classList.remove("jumpcar")
+    }
+  </script>
+</body>
+</html>

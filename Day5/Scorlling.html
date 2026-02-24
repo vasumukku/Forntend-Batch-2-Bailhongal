@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+
+  <style>
+
+    .img{
+      animation: go 1s ease-in-out  infinite ;
+    }
+
+    @keyframes go {
+      from{
+        transform: translate(0%);
+      }
+      to{
+        transform: translate(350%);
+      }
+      
+    }
+
+    .main-car{
+      animation: jump 1s ease-in-out  infinite ;
+
+    }
+
+     @keyframes jump {
+      from{
+        transform: translate(0%);
+      }
+      to{
+        transform: translate(350%, -70%);
+      }
+      
+    }
+
+
+        .Down-car{
+      animation: down 1s ease-in-out  infinite ;
+
+    }
+
+     @keyframes down {
+      from{
+        transform: translate(0%);
+      }
+      to{
+        transform: translate(350%, 120%);
+      }
+      
+
+    }
+
+    .blueimg{
+
+      animation: bluecar  5s linear infinite  alternate ;
+    }
+
+    @keyframes bluecar {
+      from{
+        transform: translateX(0);
+      }
+      to{
+        transform: translateX(-300%);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <img src="https://png.pngtree.com/element_our/png/20181223/super-red-sports-car-png_293223.jpg" alt=""  id="img-id" style="height: 50vh;  width: 30vw; margin-left: -100px;"   class="img">
+    <div style="margin-top: 20px; display: flex; flex-direction: row; justify-content: end;">
+      <img src="https://static.vecteezy.com/system/resources/thumbnails/042/119/159/small/ai-generated-blue-suv-luxury-car-side-view-png.png" alt=""   style="height: 40vh;  width: 40vw;"   class="blueimg">
+
+    </div>
+    <div style="margin-top: 50px;  margin-left: 200px;">
+        <button onclick="jump()">Jump</button>
+        <button onclick="normal()">Normal</button>
+        <button onclick="Down()">Down</button>
+    </div>
+    
+  </div>
+
+  <script>
+    let car = document.getElementById("img-id");
+    function jump() {
+      car.classList.remove("img")
+      car.classList.remove("Down-car")
+      car.classList.add("main-car");
+  
+    }
+
+      function normal() {
+      car.classList.remove("main-car")
+      car.classList.remove("Down-car")
+      car.classList.add("img");
+  
+    }
+
+       function Down() {
+      car.classList.remove("main-car")
+      car.classList.remove("img");
+         car.classList.add("Down-car")
+  
+    }
+  </script>
+</body>
+</html>

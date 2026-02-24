@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+    <!-- //signals -->
+    <div>
+      <div id="redsignalid" style="height: 100px; width: 100px; border-radius: 50%; background-color: red;  border: 10px solid black;"> </div>
+      <br>
+      <div id="Readysignalid" style="height: 100px; width: 100px;  border-radius: 50%; background-color: rgb(209, 121, 6);   border: 10px solid black;"></div>
+      <br>
+      <div  id="greemsignalid" style="height: 100px; width: 100px;  border-radius: 50%; background-color: rgb(4, 107, 9) ;  border: 10px solid black;"></div>
+
+    </div>
+
+    <div style="display: flex; flex-direction: column; height: 50vh;  justify-content: space-between;  margin-top: 10px; margin-left: 40px;">
+      <button onclick="stop()" style="padding: 10px 30px;   background-color: red; font-size: 20px; border-radius: 5px;">Stop</button>
+      <button   style="padding: 10px 30px;   background-color: rgb(209, 121, 6); font-size: 20px; border-radius: 5px;">Ready</button>
+      <button   style="padding: 10px 30px;   background-color: rgb(4, 107, 9); font-size: 20px; border-radius: 5px;">go</button>
+    </div>
+
+  </div>
+
+
+  <script >
+    let redlight = document.getElementById("redsignalid");
+    let readylight = document.getElementById("Readysignalid");
+    let greenlight = document.getElementById("greemsignalid");
+
+
+    function stop() {
+      redlight.style.backgroundColor="red";
+      readylight.style.backgroundColor="grey";
+      greenlight.style.backgroundColor="grey";
+    }
+  </script>
+</body>
+</html>

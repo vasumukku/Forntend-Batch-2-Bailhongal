@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+</head>
+<body>
+  
+  <input type="number" id="inputid" placeholder="enter how many people leaving"  style="width: 30vw; height: 5vh;">
+  <button style="height: 6vh;  padding: 0px 30px;
+   background-color: rgb(81, 81, 224); color: white; font-size: 20px;  border: 5px dashed white;
+   border-radius: 10px;"   onclick="check()">Check</button>
+
+   <h1 id="timerid">10</h1>
+   <h1 id="statusmsg">You are in pending </h1>
+
+
+   <script>
+    let timerelement = document.getElementById("timerid");
+    let statuselement = document.getElementById("statusmsg");
+    let uservalue = document.getElementById("inputid");
+
+    let count=10;
+    let timebomb = setInterval(() => {
+      timerelement .textContent=count;
+      if(count==0){
+        clearInterval(timebomb);
+         statuselement.textContent="you guys are blast 🔫🔫🔫🔫🔫🔫🔫🔫"
+      }
+      count=count-1
+    }, 1000); 
+
+
+
+
+    function check() {
+      // statuselement.textContent=uservalue.value;
+      if( parseInt(uservalue .value)===60){
+        statuselement.textContent="you guys are safe 😊😊😊"
+        clearInterval(timebomb)
+      }
+    }
+   </script>
+</body>
+</html>

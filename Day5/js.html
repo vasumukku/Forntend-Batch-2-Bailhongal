@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+<body>
+  <div   id="mainparent">
+
+  </div>
+
+
+
+  <script>
+    let mainparent = document.getElementById("mainparent");
+
+    let h1tag = document.createElement("h1");
+    h1tag.textContent="helllo all "
+   mainparent.appendChild(h1tag);
+
+   let buttontag = document.createElement("button");
+   buttontag.textContent="submit"
+   mainparent.appendChild(buttontag);
+    console.log(buttontag)
+
+  </script>
+</body>
+</html>
