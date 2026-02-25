@@ -52,3 +52,16 @@
   border-radius: 5px;
   border: none;
 }
+.loginpage-style{
+  background: linear-gradient(rgb(0, 0, 0),rgb(0, 0, 0));
+  width: 20vw;
+  height: 30vh;
+  border-radius: 20px;
+  color: #fff;
+  box-shadow: 10px 10px 10px lightgrey;
+  padding: 20px;
+}
+.login-main-parent{
+  display: flex;
+  justify-content: center;
+}

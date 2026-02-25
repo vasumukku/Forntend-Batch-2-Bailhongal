@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Navbar = () => {
+const Navbar = ({state,setState}) => {
   return (
     <div>
       
@@ -20,6 +20,10 @@ const Navbar = () => {
               <button className='coinsbuttons'> 🪙72</button>
   
           </div>
+
+          <div>
+         <button   style={{marginTop:"20px", padding:"10px 20px",border:"none",backgroundColor:"blue",color:"#fff"}}  onClick={()=>{setState(!state) }}>{state?"Login":"Logout"}</button>
+       </div>
         </div>
 
       </div>
@@ -34,6 +38,7 @@ const Navbar = () => {
           <h5 style={{fontSize:"20px"}}>  Kle </h5>
         <h5 style={{fontSize:"20px"}}>more</h5>
         <h5 style={{fontSize:"20px"}}> 🛒 Cart </h5>
+       
         </div>
 
       </div>
