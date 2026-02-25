@@ -1,0 +1,54 @@
+.flipcartButton{
+  background-color: yellow;
+  border-radius: 10px;
+  border: none;
+  padding:  10px 20px; 
+  margin: 10px;
+  text-align: center;
+  font-weight: bold;
+  
+}
+.flipcartButtonlogo{
+  height: 12px;
+  margin-top: 5px;
+}
+.flipcartButtontravel{
+   background-color: rgb(201, 201, 193);
+  border-radius: 10px;
+  border: none;
+  padding:  10px 20px; 
+  margin: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+.locationstyle{
+  color: blue;
+}
+.coinsbuttons{
+  background-color: rgb(236, 236, 113);
+  border: none;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+.cards-container{
+  background: linear-gradient(rgb(159, 159, 231),pink);
+  padding: 10px;
+  margin-left: 30px;
+  margin-right: 30px;
+  border-radius: 20px;
+}
+.Addtocartbutton{
+  background-color: rgb(190, 157, 10);
+  color: black;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin-right: 20px;
+}
+.buynowbuuton{
+    background-color: rgb(7, 100, 187);
+  color: rgb(250, 250, 250);
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
