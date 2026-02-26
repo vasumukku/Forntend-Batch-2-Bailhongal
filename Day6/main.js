@@ -1,4 +1,6 @@
 const {hello,hello1}= require("./first")
+console.log(x)
+
 
 const secondfile = require("./second")
 
